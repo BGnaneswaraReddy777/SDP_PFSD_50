@@ -1,0 +1,20 @@
+{% extends 'DocterNavbar.html' %}
+{% load static %}
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consult</title>
+</head>
+<body>
+{% block body %}
+  <div class="nutriinfo" style="margin-top: 10px; display: flex; flex-direction: column; align-items: center;">
+    <h1 style="font-size: 30px;"><b>My Bookings</b></h1>
+    <a href="{% url 'show' %}">
+  <button class="btn btn-custom" >See My Consults</button>
+</a>
+  </div>
+{% endblock %}
+</body>
+</html>
